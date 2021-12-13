@@ -14,7 +14,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'CODENCY',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Color(0xff9d242b),
+        inputDecorationTheme: InputDecorationTheme(
+            filled: true,
+            fillColor: Color(0xfff2f9fe),
+            enabledBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.grey.shade200),
+              borderRadius: BorderRadius.circular(25),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.grey.shade200),
+              borderRadius: BorderRadius.circular(25),
+            ),
+            disabledBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.grey.shade200),
+              borderRadius: BorderRadius.circular(25),
+            )),
       ),
       home: const Login(),
     );
